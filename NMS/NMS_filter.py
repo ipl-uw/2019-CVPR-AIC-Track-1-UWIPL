@@ -51,7 +51,7 @@ img_size = {"6":[1920,1080],
            "34":[1920,1080],
            "35":[1920,1080],
            "36":[1920,1080]}
-txt_file = np.loadtxt("ict_greedy_iter1600_12.420_657_518.txt",dtype='float',delimiter=' ')
+txt_file = np.loadtxt("ict_greedy_iter1600_10.559_654_498.txt",dtype='float',delimiter=' ')
 
 
 # In[2]:
@@ -265,7 +265,7 @@ for key in img_size.keys():
     refine_M[refine_M[:,0]==float(key),5] = w
     refine_M[refine_M[:,0]==float(key),6] = h
 '''    
-np.savetxt('ict_greedy_iter1600_12.420_657_518_big.txt',refine_M, fmt='%d', delimiter=' ')
+np.savetxt('ict_greedy_iter1600_10.559_654_498_big.txt',refine_M, fmt='%d', delimiter=' ')
     
 
         
