@@ -9,7 +9,7 @@ Put and run `python crop_img.py` in the same folder in the downloaded dataset (i
 The code is based on Jiyang Gao's Video-Person-ReID \[[code](https://github.com/jiyanggao/Video-Person-ReID)\].<br/>
 
 ## 3. Trajectory-Based Camera Link Models
-Put the feature files (q_camids3_no_nms_big0510.npy, qf3_no_nms_big0510.npy and q_pids3_no_nms_big0510.npy) in the Transition-Model folder of this project. Then, run `python main_in_transition_matrix.py`. Then, find the results in Transition-Model/transition_data /ICT-no_nms_big510/ and select ict_greedy_iter1600_10.559_654_498.txt (1600 means the index of iteration, 10.559 represents the distance of embeddings, 654 means the number of globelID, 498 is the non-redundant number of globelID). <br />
+Put the feature files (q_camids3_no_nms_big0510.npy, qf3_no_nms_big0510.npy and q_pids3_no_nms_big0510.npy) in the Transition-Model folder of this project. Then, run `python main_in_transition_matrix.py`. Then, find the results in Transition-Model/transition_data /ICT-no_nms_big510/ and select ict_greedy_iter1600_10.559_654_498.txt (1600 means the index of iteration, 10.559 represents the distance of embeddings, 654 means the maximum globelID assigned to cross-camera vehicles, 498 is the number of unique globelID after merging). <br />
 
 ## 4. NMS
 ict_greedy_iter1600_10.559_654_498.txt is the input of NMS so that ict_greedy_iter1600_10.559_654_498.txt needs to be placed in the NMS folder. Run `python NMS_filter.py` to get ict_greedy_iter1600_10.559_654_498_big.txt which is the final result of Track1. <br />
