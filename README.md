@@ -12,4 +12,4 @@ The code is based on Jiyang Gao's Video-Person-ReID \[[code](https://github.com/
 Put the feature files (q_camids3_no_nms_big0510.npy, qf3_no_nms_big0510.npy and q_pids3_no_nms_big0510.npy) in the Transition-Model folder of this project. Then, run `python main_in_transition_matrix.py`. Then, find the results in Transition-Model/transition_data /ICT-no_nms_big510/ and select ict_greedy_iter1600_10.559_654_498.txt (1600 means the index of iteration, 10.559 represents the distance of embeddings, 654 means the maximum globelID assigned to cross-camera vehicles, 498 is the number of unique globelID after merging). <br />
 
 ## 4. NMS
-Put ict_greedy_iter1600_10.559_654_498.txt needs to be placed in NMS folder. Then, run `python NMS_filter.py` to get ict_greedy_iter1600_10.559_654_498_big.txt which is the final result of Track1. <br />
+Put ict_greedy_iter1600_10.559_654_498.txt in NMS folder. Then, run `python NMS_filter.py` to get ict_greedy_iter1600_10.559_654_498_big.txt which is the final result of Track1. <br />
